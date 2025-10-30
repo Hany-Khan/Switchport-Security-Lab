@@ -20,10 +20,10 @@ This lab was done at Algonquin College, offered in the Routing and Switching cou
 ---
 
 # Part 1 - Initial Setup
-- Power on devices
-- Verify no previous configs are on devices before continuing with the lab
-- Do basic config (refer to Basic Confg)
-- Verify neighboring connectiongs via: *show cdp neighbors* in privilege exec
+- [ ] Power on devices
+- [ ] Verify no previous configs are on devices before continuing with the lab
+- [ ] Do basic config (refer to Basic Confg)
+- [ ] Verify neighboring connectiongs via: *show cdp neighbors* in privilege exec
 Goal: Confirm all physical links and base configurations are working before moving forward.
 
 --- 
@@ -40,7 +40,34 @@ Goal: Ensure proper VLAN segmentation and inter-switch connectivity.
 --- 
 
 # Part 3 - Addressing and Routing 
-- Enable routing on MLS
-- Configure addressing for RA, MLS, and ALS interfaces
-- Verify directly connected networks via ping and traceroute
-- 
+- [ ] Enable routing on MLS
+- [ ] Configure addressing for RA, MLS, and ALS interfaces
+- [ ] Verify directly connected networks via ping and traceroute
+- [ ] On RA:
+- Add a default route via RemoteSw
+- Add static routes for PC and VM networks
+- [ ] On MLS:
+- Add default route via RemoteSw
+- [ ] Confirm all devices can reach the FTP server
+Goal: Establish network layer connectivity between all segments.
+
+--- 
+
+# Part 4 - DHCP Server Configurations
+
+On MLS (for VLAN 100 – PCs)
+- [ ] Create DHCP pool VLAN-100
+- [ ] Exclude used addresses
+- [ ] Set gateway, DNS, domain name, and 6-hour lease
+- [ ] Configure DHCP relay if broadcasts can’t reach the server
+
+On RA (for VLAN 200 – VMs)
+- [ ] Create DHCP pool VLAN-200
+- [ ] Exclude used addresses
+- [ ] Set gateway, DNS, domain name, and 1.5-day lease
+- [ ] Configure DHCP relay if needed
+
+Verify with:
+- [ ] PCs and VMs get valid IPs and can reach www.8315.ca
+- [ ] Use show ip dhcp binding to confirm leases
+Goal: Provide automatic IP assignment for both VLANs.
