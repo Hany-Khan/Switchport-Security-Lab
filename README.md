@@ -15,3 +15,11 @@ This lab was done at Algonquin College, offered in the Routing and Switching cou
 ## Networking Topology
 
 ![Topology](Topology.jpg)
+
+---
+
+# Part 1 - Initial Setup
+- Power on devices
+- Verify no previous configs are on devices before continuing with the lab
+- Do basic config (refer to Basic Confg)
+- Verify neighboring connectiongs via: *show cdp neighbors* in privilege exec 
