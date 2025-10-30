@@ -14,4 +14,4 @@ This lab was done at Algonquin College, offered in the Routing and Switching cou
 ---
 ## Networking Topology
 
-![Topology] (Topology.jpg)
+![Topology](Topology.jpg)
