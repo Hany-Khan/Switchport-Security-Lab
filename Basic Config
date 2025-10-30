@@ -1,0 +1,26 @@
+hostname <username>-W13-ALS
+service password-encryption
+enable secret class
+no ip domain lookup
+vtp mode transparent
+spanning-tree mode rapid-pvst
+ip ftp username <username>
+ip ftp password <password>
+
+line con 0
+exec-timeout 60 30
+logging synch
+exit
+
+line vty 0 15
+exec-timeout 60 30
+logging synch
+transport input ssh
+login local
+exit
+
+username cisco secret class
+crypto key generate rsa general-keys modulus 1024
+ip domain name 8315.ca
+ip ssh version 2
+do terminal monitor
