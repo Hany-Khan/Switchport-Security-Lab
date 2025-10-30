@@ -1,9 +1,9 @@
 # Switchport-Security-Lab
 Switchport security lab done during a routing and switching course at Algonquin college over the summer 2025 semester.
 
-**Course:** CST8371  
-**Week:** W06  
-**Activity:** Lab (10 pts)  
+*Course:* **CST8315**
+*Week:* **Week 12**
+*Activity:* **Lab**  
 
 **Submission:** `{username}-w06-tsk#.txt` → TFTP (ops-only lines)  all automatic collections.
 **Difficulty**:  4.5/5
