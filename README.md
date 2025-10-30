@@ -10,3 +10,8 @@ This lab focuses on securing Layer 2 switching operations in a campus network. Y
 --- 
 **NOTE**
 This lab was done at Algonquin College, offered in the Routing and Switching course (CST8315) in the Computer Systems Technician - Networking course. I just found this lab really fun and intresting!
+
+---
+## Networking Topology
+
+![Topology] (Topology.jpg)
