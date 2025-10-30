@@ -16,10 +16,23 @@ This lab was done at Algonquin College, offered in the Routing and Switching cou
 
 ![Topology](Topology.jpg)
 
+
 ---
 
 # Part 1 - Initial Setup
 - Power on devices
 - Verify no previous configs are on devices before continuing with the lab
 - Do basic config (refer to Basic Confg)
-- Verify neighboring connectiongs via: *show cdp neighbors* in privilege exec 
+- Verify neighboring connectiongs via: *show cdp neighbors* in privilege exec
+Goal: Confirm all physical links and base configurations are working before moving forward.
+
+--- 
+
+# Part 2 - VLANS and VTP
+- Set the VTP mode to transparent on ALL switches
+- Create and name all VLANs on the topology
+- On ALS, configure the access ports:
+- [ ] VLAN 100 → Gi0/5–15 (PCs)
+- [ ] VLAN 200 → Gi0/16–24 (VMs)
+- Configure trunking between MLS and ALS and verify connectivity.
+Goal: Ensure proper VLAN segmentation and inter-switch connectivity.
