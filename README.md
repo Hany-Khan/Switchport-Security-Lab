@@ -71,3 +71,34 @@ Verify with:
 - [ ] PCs and VMs get valid IPs and can reach www.8315.ca
 - [ ] Use show ip dhcp binding to confirm leases
 Goal: Provide automatic IP assignment for both VLANs.
+
+--- 
+
+# Part 5 - Port Security on ALS
+- [ ] Disable CDP on edge ports to prevent information leakage
+- [ ] Disable all unused ports
+- [ ] Configure port security with the follow requirements:
+- VLAN 100 ports (Gi0/5–15): max 2 MACs, restrict violations
+- VLAN 200 ports (Gi0/16–24): max 3 MACs, shutdown on violation
+- [ ] Enable sticky MAC learning
+- [ ] Verify with show port-security
+Goal: Prevent MAC flooding and unauthorized device access.
+
+---
+# Part 6 - DHCP Snooping
+- [ ] Enable DHCP snooping globally and for VLANs 100 and 200
+- [ ] Configure trusted ports toward DHCP servers (Po1 interface)
+- [ ] Limit DHCP discover frames to 20 per second on edge ports
+- [ ] Disable Option 82 insertion
+- [ ] Verify bindings with show ip dhcp snooping binding
+Goal: Protect against rogue DHCP servers and DHCP starvation attacks.
+
+--- 
+# Part 7 - Cleanup
+- [ ] Erase startup configs and VLAN data from all devices
+- [ ] Verify with:
+- show startup-config
+- show flash: | inc vlan.dat
+- [ ] Present clean output to professor for grading
+- [ ] Neatly disconnect and store all cables before powering down equipment
+Goal: Leave all lab gear in a default, ready state for the next class.
