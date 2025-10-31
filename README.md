@@ -99,6 +99,5 @@ Goal: Protect against rogue DHCP servers and DHCP starvation attacks.
 - [ ] Verify with:
 - show startup-config
 - show flash: | inc vlan.dat
-- [ ] Present clean output to professor for grading
 - [ ] Neatly disconnect and store all cables before powering down equipment
 Goal: Leave all lab gear in a default, ready state for the next class.
